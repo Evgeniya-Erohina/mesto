@@ -1,0 +1,28 @@
+.popup__form-close {
+  all: unset;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: -38px;
+  right: -38px;
+  background: url(../../../images/Close\ Icon.svg) center / cover;
+  transition: opacity ease-in-out .3s;
+  cursor: pointer;
+}
+
+.popup__form-close:hover {
+  opacity: 0.6;
+}
+
+.popup__form-close:active {
+  opacity: 1;
+}
+
+@media (min-width: 320px) and (max-width: 564px) {
+  .popup__form-close {
+    width: 20px;
+    height: 20px;
+    top: -38px;
+    right: 0;
+  }
+}

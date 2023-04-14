@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="достопримечательности, фото красивых мест">
+  <meta name="keywords" content="Жак-Ив Кусто, Карачаевск, Эльбрус, Домбай">
+  <meta name="author" content="Евгения Ерохина">
+  <title>Место</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="root">
+  <div class="page">
+    <header class="header">
+      <img src="images/logo.svg" alt="логотип" class="header__logo">
+    </header>
+    <main class="content">
+      <div class="profile">
+        <img class="profile__photo" src="images/Kusto.jpg" alt="фото" data-type="auto">
+        <div class="profile__form">
+          <h1 class="profile__form-name">Жак-Ив Кусто</h1>
+          <p class="profile__form-job">Исследователь океана</p>
+          <button class="profile__form-redaction profile__form-redaction_popup-open" type="button">
+          </button>
+        </div>
+        <button class="profile__form-addition" type="button"></button>
+      </div>
+      <ul class="gallery">
+        <li class="gallery__item">
+          <div class="gallery__item-image"><img class="gallery__image" src="images/1.jpg" alt="Красная поляна"
+              data-type="auto"></div>
+          <h2 class="gallery__title">Красная поляна</h2>
+          <button type="button" class="gallery__heart"></button>
+        </li>
+        <li class="gallery__item">
+          <div class="gallery__item-image"><img class="gallery__image" src="images/2.jpg" alt="Сулакский каньон"
+              data-type="auto"></div>
+
+          <h2 class="gallery__title">Сулакский каньон</h2>
+          <button type="button" class="gallery__heart"></button>
+        </li>
+        <li class="gallery__item">
+          <div class="gallery__item-image"><img class="gallery__image" src="images/3.jpg" alt="Домбай"
+              data-type="auto"></div>
+          <h2 class="gallery__title">Карелия</h2>
+          <button type="button" class="gallery__heart"></button>
+        </li>
+        <li class="gallery__item">
+          <div class="gallery__item-image"><img class="gallery__image" src="images/Albrus.jpg" alt="Эльбрус"
+              data-type="auto"></div>
+          <h2 class="gallery__title">Гора Эльбрус</h2>
+          <button type="button" class="gallery__heart"></button>
+        </li>
+        <li class="gallery__item">
+          <div class="gallery__item-image"><img class="gallery__image" src="images/Dombay.jpg" alt="Домбай"
+              data-type="auto"></div>
+          <h2 class="gallery__title">Домбай</h2>
+          <button type="button" class="gallery__heart"></button>
+        </li>
+        <li class="gallery__item">
+          <div class="gallery__item-image"><img class="gallery__image" src="images/Karachaevsk.jpg" alt="Карачаевск"
+              data-type="auto"></div>
+          <h2 class="gallery__title">Карачаево-Черкесская Республика</h2>
+          <button type="button" class="gallery__heart"></button>
+        </li>
+      </ul>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">© 2020 Mesto Russia</p>
+    </footer>
+  </div>
+  <div class="popup">
+    <div class="popup__container">
+      <form class="popup__form" action="" method="post" onsubmit="">
+        <button class="popup__form-close" type="button"></button>
+        <h2 class="popup__form-title">Редактировать профиль</h2>
+        <input type="text" size="30" name="firstname" value="Жак-Ив Кусто" placeholder="Имя" class="popup__form-name popup__field">
+        <input type="text" size="30" name="description" value="Исследователь океана" placeholder="О себе"
+          class="popup__form-job popup__field">
+        <button type="submit" form="popup__form" class="popup__form-button" onclick="">Сохранить</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"> </script>
+</body>
+
+</html>

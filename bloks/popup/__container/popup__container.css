@@ -1,0 +1,9 @@
+.popup__container {
+  margin: 195px auto;
+}
+
+@media (min-width: 320px) and (max-width: 564px) {
+  .popup__container {
+    margin: 122px auto;
+  }
+}

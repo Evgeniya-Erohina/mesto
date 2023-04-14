@@ -1,0 +1,9 @@
+.gallery__item {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto 45px;
+  align-items: start;
+  gap: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}

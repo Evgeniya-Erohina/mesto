@@ -1,0 +1,37 @@
+.profile__form-addition {
+  all: unset;
+  width: 150px;
+  justify-self: end;
+  height: 50px;
+  margin: auto 0;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background: url(../../../images/addition.svg) 50% 50% no-repeat;
+  background-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1280 - 320)));
+  transition: opacity ease-in-out .3s;
+  cursor: pointer;
+  flex-basis: auto;
+}
+
+.profile__form-addition:hover {
+  opacity: 0.6;
+}
+
+.profile__form-addition:active {
+  opacity: 1;
+}
+
+@media (max-width: 890px) {
+  .profile__form-addition {
+    width: 100%;
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .profile__form-addition {
+    margin: 0;
+    grid-column: unset;
+  }
+}

@@ -1,0 +1,8 @@
+.footer__copyright {
+  font-weight: 400;
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1280 - 320)));
+  line-height: calc(17px + (22 - 17) * ((100vw - 320px) / (1280 - 320)));
+  text-align: left;
+  color: #545454;
+  margin: auto 0;
+}

@@ -1,0 +1,27 @@
+.profile {
+  display: grid;
+  grid: 120px / 120px auto auto;
+  gap: 30px;
+  flex-direction: row;
+  padding-top: 42px;
+}
+
+@media (max-width: 890px) {
+  .profile {
+    padding: 42px 0 0;
+    grid: 120px 1fr/ auto auto;
+    padding-top: 42px;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .profile {
+    grid: 120px auto auto/ auto;
+    align-items: center;
+
+    gap: 22px;
+  }
+}

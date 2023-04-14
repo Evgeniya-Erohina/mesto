@@ -1,0 +1,19 @@
+.profile__form-job {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  grid-area: about-self;
+  margin: 0;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .profile__form-job {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  }
+}

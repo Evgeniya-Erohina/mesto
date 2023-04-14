@@ -1,0 +1,19 @@
+.profile__form-redaction {
+  all: unset;
+  grid-area: button-r;
+  background: url(../../../images/redaction.svg) 50% 50% no-repeat;
+  background-size: cover;
+  width: calc(18px + (24 - 18) * ((100vw - 320px) / (1280 - 320)));
+  height: calc(18px + (24 - 18) * ((100vw - 320px) / (1280 - 320)));
+  transition: opacity ease-in-out .3s;
+  cursor: pointer;
+  margin: auto 0;
+}
+
+.profile__form-redaction:hover {
+  opacity: 0.6;
+}
+
+.profile__form-redaction:active {
+  opacity: 1;
+}
