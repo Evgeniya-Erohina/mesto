@@ -3,6 +3,7 @@
   font-size: calc(27px + (42 - 27) * ((100vw - 320px) / (1280 - 320)));
   line-height: calc(33px + (48 - 33) * ((100vw - 320px) / (1280 - 320)));
   text-align: left;
+  vertical-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -10,7 +11,7 @@
   margin: 0;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .profile__form-name {
     padding-left: 35px;
   }

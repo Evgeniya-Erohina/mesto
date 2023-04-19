@@ -9,9 +9,9 @@
 
 @import url(../bloks/gallery/__heart/gallery__heart.css);
 @import url(../bloks/gallery/__image/gallery__image.css);
-@import url(../bloks/gallery/__item-image/gallery__item-image.css);
 @import url(../bloks/gallery/__item/gallery__item.css);
 @import url(../bloks/gallery/__title/gallery__title.css);
+@import url(../bloks/gallery/__info/gallery__info.css);
 @import url(../bloks/gallery/gallery.css);
 
 @import url(../bloks/page/page.css);
@@ -33,7 +33,5 @@
 @import url(../bloks/profile/__form/profile__form.css);
 @import url(../bloks/profile/__photo/profile__photo.css);
 @import url(../bloks/profile/profile.css);
-
-@import url(../bloks/content/content.css);
 
 @import url(../bloks/root/root.css);

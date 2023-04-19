@@ -2,6 +2,19 @@
   padding: calc(36px + (47 - 36) * ((100vw - 320px) / (1280 - 320))) 0 0;
   margin: 0 auto;
   display: grid;
-  gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  gap: 20px 17px;
+  grid-template-columns: repeat(3, 282px);
+}
+
+@media (max-width: 940px) {
+  .gallery {
+    grid-template-columns: repeat(2, 282px);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 282px;
+    gap: 20px;
+  }
 }

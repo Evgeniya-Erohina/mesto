@@ -17,11 +17,11 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .profile {
-    grid: 120px auto auto/ auto;
+    flex-direction: column;
+    grid: 120px 1fr 50px/ auto;
     align-items: center;
-
     gap: 22px;
   }
 }

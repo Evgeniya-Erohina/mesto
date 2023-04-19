@@ -31,41 +31,46 @@
       </div>
       <ul class="gallery">
         <li class="gallery__item">
-          <div class="gallery__item-image"><img class="gallery__image" src="images/1.jpg" alt="Красная поляна"
-              data-type="auto"></div>
-          <h2 class="gallery__title">Красная поляна</h2>
-          <button type="button" class="gallery__heart"></button>
+          <img class="gallery__image" src="images/1.jpg" alt="Красная поляна" data-type="auto">
+          <div class="gallery__info">
+            <h2 class="gallery__title">Красная поляна</h2>
+            <button type="button" class="gallery__heart"></button>
+          </div>
         </li>
         <li class="gallery__item">
-          <div class="gallery__item-image"><img class="gallery__image" src="images/2.jpg" alt="Сулакский каньон"
-              data-type="auto"></div>
-
-          <h2 class="gallery__title">Сулакский каньон</h2>
-          <button type="button" class="gallery__heart"></button>
+          <img class="gallery__image" src="images/2.jpg" alt="Сулакский каньон" data-type="auto">
+          <div class="gallery__info">
+            <h2 class="gallery__title">Сулакский каньон</h2>
+            <button type="button" class="gallery__heart"></button>
+          </div>
         </li>
         <li class="gallery__item">
-          <div class="gallery__item-image"><img class="gallery__image" src="images/3.jpg" alt="Карелия"
-              data-type="auto"></div>
-          <h2 class="gallery__title">Карелия</h2>
-          <button type="button" class="gallery__heart"></button>
+          <img class="gallery__image" src="images/3.jpg" alt="Карелия" data-type="auto">
+          <div class="gallery__info">
+            <h2 class="gallery__title">Карелия</h2>
+            <button type="button" class="gallery__heart"></button>
+          </div>
         </li>
         <li class="gallery__item">
-          <div class="gallery__item-image"><img class="gallery__image" src="images/Albrus.jpg" alt="Эльбрус"
-              data-type="auto"></div>
-          <h2 class="gallery__title">Гора Эльбрус</h2>
-          <button type="button" class="gallery__heart"></button>
+          <img class="gallery__image" src="images/Albrus.jpg" alt="Эльбрус" data-type="auto">
+          <div class="gallery__info">
+            <h2 class="gallery__title">Гора Эльбрус</h2>
+            <button type="button" class="gallery__heart"></button>
+          </div>
         </li>
         <li class="gallery__item">
-          <div class="gallery__item-image"><img class="gallery__image" src="images/Dombay.jpg" alt="Домбай"
-              data-type="auto"></div>
-          <h2 class="gallery__title">Домбай</h2>
-          <button type="button" class="gallery__heart"></button>
+          <img class="gallery__image" src="images/Dombay.jpg" alt="Домбай" data-type="auto">
+          <div class="gallery__info">
+            <h2 class="gallery__title">Домбай</h2>
+            <button type="button" class="gallery__heart"></button>
+          </div>
         </li>
         <li class="gallery__item">
-          <div class="gallery__item-image"><img class="gallery__image" src="images/Karachaevsk.jpg" alt="Карачаевск"
-              data-type="auto"></div>
-          <h2 class="gallery__title">Карачаево-Черкесская Республика</h2>
-          <button type="button" class="gallery__heart"></button>
+          <img class="gallery__image" src="images/Karachaevsk.jpg" alt="Карачаевск" data-type="auto">
+          <div class="gallery__info">
+            <h2 class="gallery__title">Карачаево-Черкесская Республика</h2>
+            <button type="button" class="gallery__heart"></button>
+          </div>
         </li>
       </ul>
     </main>
@@ -75,17 +80,18 @@
   </div>
   <div class="popup">
     <div class="popup__container">
-      <form class="popup__form" action="" method="post" onsubmit="">
+      <form class="popup__form" action="#" method="post" onsubmit="">
         <button class="popup__form-close" type="button"></button>
-        <h2 class="popup__form-title">Редактировать профиль</h2>
-        <input type="text" size="30" name="firstname" value="Жак-Ив Кусто" placeholder="Имя" class="popup__form-name popup__field">
+        <p class="popup__form-title">Редактировать профиль</p>
+        <input type="text" size="30" name="firstname" value="Жак-Ив Кусто" placeholder="Имя"
+          class="popup__form-name popup__field">
         <input type="text" size="30" name="description" value="Исследователь океана" placeholder="О себе"
           class="popup__form-job popup__field">
-        <button type="submit" form="popup__form" class="popup__form-button" onclick="">Сохранить</button>
+        <button type="submit" class="popup__form-button" onclick="">Сохранить</button>
       </form>
     </div>
   </div>
-  <script src="script.js"> </script>
+  <script src="index.js"></script>
 </body>
 
 </html>

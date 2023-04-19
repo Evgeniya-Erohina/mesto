@@ -29,7 +29,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .profile__form-addition {
     margin: 0;
     grid-column: unset;

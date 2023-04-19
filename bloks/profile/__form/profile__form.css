@@ -15,8 +15,8 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .profile__form {
-    padding: 0 0 14px;
+    padding: 0 0 13px;
   }
 }

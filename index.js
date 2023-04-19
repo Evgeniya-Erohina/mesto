@@ -36,8 +36,6 @@ function handleFormSubmit(evt) {
   // О том, как это делать, расскажем позже.
 
  // Получите значение полей jobInput и nameInput из свойства value
- const name = nameInput.value;
- const job= jobInput.value;
 
   // Выберите элементы, куда должны быть вставлены значения полей*/
 let nameProfile = document.querySelector('.profile__form-name');
