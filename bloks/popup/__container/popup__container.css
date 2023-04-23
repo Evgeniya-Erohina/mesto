@@ -12,9 +12,8 @@
   margin: auto;
 }
 
-@media (min-width: 320px) and (max-width: 600px) {
+@media (max-width: 600px) {
   .popup__container {
-    width: calc(100%-19px*2);
     max-width: 282px;
     padding: 25px 22px;
   }
