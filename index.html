@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index,follow">
   <meta name="description" content="достопримечательности, фото красивых мест">
-  <meta name="keywords" content="Жак-Ив Кусто, Карачаевск, Эльбрус, Домбай">
+  <meta name="keywords" content="Жак-Ив Кусто, Карачаевск, Эльбрус, Домбай, Красная поляна, Карелия">
   <meta name="author" content="Евгения Ерохина">
   <title>Место</title>
   <link rel="stylesheet" href="./pages/index.css">
@@ -19,60 +19,66 @@
       <img src="images/logo.svg" alt="Логотип-очертания России" class="header__logo">
     </header>
     <main class="content">
-      <div class="profile">
+      <section class="profile">
         <img class="profile__photo" src="images/Kusto.jpg" alt="Аватарка" data-type="auto">
         <div class="profile__form">
           <h1 class="profile__form-name">Жак-Ив Кусто</h1>
           <p class="profile__form-job">Исследователь океана</p>
-          <button class="profile__form-redaction profile__form-redaction_popup-open" type="button">
-          </button>
+          <button class="profile__form-redaction" type="button"></button>
         </div>
         <button class="profile__form-addition" type="button"></button>
-      </div>
-      <ul class="gallery">
-        <li class="gallery__item">
-          <img class="gallery__image" src="images/1.jpg" alt="Красная поляна" data-type="auto">
-          <div class="gallery__info">
-            <h2 class="gallery__title">Красная поляна</h2>
-            <button type="button" class="gallery__heart"></button>
-          </div>
-        </li>
-        <li class="gallery__item">
-          <img class="gallery__image" src="images/2.jpg" alt="Сулакский каньон" data-type="auto">
-          <div class="gallery__info">
-            <h2 class="gallery__title">Сулакский каньон</h2>
-            <button type="button" class="gallery__heart"></button>
-          </div>
-        </li>
-        <li class="gallery__item">
-          <img class="gallery__image" src="images/3.jpg" alt="Карелия" data-type="auto">
-          <div class="gallery__info">
-            <h2 class="gallery__title">Карелия</h2>
-            <button type="button" class="gallery__heart"></button>
-          </div>
-        </li>
-        <li class="gallery__item">
-          <img class="gallery__image" src="images/Albrus.jpg" alt="Эльбрус" data-type="auto">
-          <div class="gallery__info">
-            <h2 class="gallery__title">Гора Эльбрус</h2>
-            <button type="button" class="gallery__heart"></button>
-          </div>
-        </li>
-        <li class="gallery__item">
-          <img class="gallery__image" src="images/Dombay.jpg" alt="Домбай" data-type="auto">
-          <div class="gallery__info">
-            <h2 class="gallery__title">Домбай</h2>
-            <button type="button" class="gallery__heart"></button>
-          </div>
-        </li>
-        <li class="gallery__item">
-          <img class="gallery__image" src="images/Karachaevsk.jpg" alt="Карачаевск" data-type="auto">
-          <div class="gallery__info">
-            <h2 class="gallery__title">Карачаево-Черкесская Республика</h2>
-            <button type="button" class="gallery__heart"></button>
-          </div>
-        </li>
-      </ul>
+      </section>
+      <section class="gallery">
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <img class="gallery__image" src="images/1.jpg" alt="Красная поляна летом, вид с высоты птичьего полета"
+              data-type="auto">
+            <div class="gallery__info">
+              <h2 class="gallery__title">Красная поляна</h2>
+              <button type="button" class="gallery__heart"></button>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="images/2.jpg" alt="Живописеая долина реки Сулак в Дагестане "
+              data-type="auto">
+            <div class="gallery__info">
+              <h2 class="gallery__title">Сулакский каньон</h2>
+              <button type="button" class="gallery__heart"></button>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="images/3.jpg" alt="Мраморные скалы горного парка Рускеала в Карелии"
+              data-type="auto">
+            <div class="gallery__info">
+              <h2 class="gallery__title">Карелия</h2>
+              <button type="button" class="gallery__heart"></button>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="images/Albrus.jpg" alt="Гора Эльбрус на закате" data-type="auto">
+            <div class="gallery__info">
+              <h2 class="gallery__title">Гора Эльбрус</h2>
+              <button type="button" class="gallery__heart"></button>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="images/Dombay.jpg" alt="Осенний Домбай в пасмурную погоду"
+              data-type="auto">
+            <div class="gallery__info">
+              <h2 class="gallery__title">Домбай</h2>
+              <button type="button" class="gallery__heart"></button>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="images/Karachaevsk.jpg" alt="Сентинский храм в горах летом"
+              data-type="auto">
+            <div class="gallery__info">
+              <h2 class="gallery__title">Карачаево-Черкесская Республика</h2>
+              <button type="button" class="gallery__heart"></button>
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">© 2020 Mesto Russia</p>
@@ -80,18 +86,16 @@
   </div>
   <div class="popup">
     <div class="popup__container">
-      <form class="popup__form" action="#" method="post" onsubmit="">
-        <button class="popup__form-close" type="button"></button>
-        <p class="popup__form-title">Редактировать профиль</p>
-        <input type="text" size="30" name="firstname" value="Жак-Ив Кусто" placeholder="Имя"
-          class="popup__form-name popup__field">
-        <input type="text" size="30" name="description" value="Исследователь океана" placeholder="О себе"
-          class="popup__form-job popup__field">
-        <button type="submit" class="popup__form-button" onclick="">Сохранить</button>
+      <form class="popup__form" action="#" method="post" name="popupForm">
+        <h2 class="popup__form-title">Редактировать профиль</h2>
+        <input type="text" id="name" name="firstname" placeholder="Имя" class="popup__field">
+        <input type="text" id="job" name="description" placeholder="О себе" class="popup__field">
+        <button type="submit" class="popup__button-save" onclick="">Сохранить</button>
       </form>
+      <button class="popup__button-close" type="button"></button>
     </div>
   </div>
-  <script src="index.js"></script>
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>

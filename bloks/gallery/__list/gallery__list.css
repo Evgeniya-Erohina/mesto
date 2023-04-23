@@ -1,4 +1,4 @@
-.gallery {
+.gallery__list {
   padding: calc(36px + (47 - 36) * ((100vw - 320px) / (1280 - 320))) 0 0;
   margin: 0 auto;
   display: grid;
@@ -7,13 +7,13 @@
 }
 
 @media (max-width: 940px) {
-  .gallery {
+  .gallery__list {
     grid-template-columns: repeat(2, 282px);
   }
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
-  .gallery {
+  .gallery__list {
     grid-template-columns: 282px;
     gap: 20px;
   }

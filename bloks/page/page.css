@@ -20,6 +20,12 @@
 
 @media (max-width: 600px) {
   .page {
-    padding: 28px calc((100% - 282px) / 2) 36px;
+    padding: 0 calc((100% - 282px) / 2);
+  }
+}
+
+@media (max-width: 340px) {
+  .page {
+    padding: 0;
   }
 }

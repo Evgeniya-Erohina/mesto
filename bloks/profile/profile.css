@@ -1,18 +1,15 @@
 .profile {
   display: grid;
-  grid: 120px / 120px auto auto;
+  grid: 120px / 120px auto minmax(200px, 1fr);
   gap: 30px;
   flex-direction: row;
   padding-top: 42px;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 940px) {
   .profile {
-    padding: 42px 0 0;
-    grid: 120px 1fr/ auto auto;
-    padding-top: 42px;
+    grid: 120px 1fr/ 120px auto;
     flex-wrap: wrap;
-    gap: 30px;
     margin: 0 auto;
   }
 }
@@ -22,6 +19,7 @@
     flex-direction: column;
     grid: 120px 1fr 50px/ auto;
     align-items: center;
-    gap: 22px;
+    gap: 26px;
+    padding-top: 0;
   }
 }
