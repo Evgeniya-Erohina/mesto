@@ -11,11 +11,4 @@
 
 .popup__field:last-child {
   margin-bottom: 48px;
-
-}
-
-@media (min-width: 320px) and (max-width: 564px) {
-  .popup__field:last-child {
-    margin-bottom: 48px;
-  }
 }
