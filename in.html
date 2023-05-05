@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="достопримечательности, фото красивых мест">
+  <meta name="keywords" content="Жак-Ив Кусто, Карачаевск, Эльбрус, Домбай, Красная поляна, Карелия">
+  <meta name="author" content="Евгения Ерохина">
+  <title>Место</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="root">
+  <div class="page">
+    <header class="header">
+      <img src="images/logo.svg" alt="Логотип-очертания России" class="header__logo">
+    </header>
+    <main class="content">
+      <section class="profile">
+        <img class="profile__photo" src="images/Kusto.jpg" alt="Аватарка" data-type="auto">
+        <div class="profile__form">
+          <h1 class="profile__form-name">Жак-Ив Кусто</h1>
+          <p class="profile__form-job">Исследователь океана</p>
+          <button class="profile__form-redaction" type="button"></button>
+        </div>
+        <button class="profile__form-addition" type="button"></button>
+      </section>
+      <section class="gallery">
+        <ul class="gallery__list">
+          <li  class="gallery__item">
+            <button type="button" class="gallery__button-delete"></button>
+            <img id="gallery-image" class="gallery__image" src="images/1.jpg" alt="Красная поляна летом, вид с высоты птичьего полета"
+              data-type="auto">
+            <div class="gallery__info">
+              <h2 class="gallery__title">Красная поляна</h2>
+              <button type="button" class="gallery__button-like"></button>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <button type="button" class="gallery__button-delete"></button>
+            <img class="gallery__image" src="images/2.jpg" alt="Живописеая долина реки Сулак в Дагестане "
+              data-type="auto">
+            <div class="gallery__info">
+              <h2 class="gallery__title">Сулакский каньон</h2>
+              <button type="button" class="gallery__button-like"></button>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <button type="button" class="gallery__button-delete"></button>
+            <img class="gallery__image" src="images/3.jpg" alt="Мраморные скалы горного парка Рускеала в Карелии"
+              data-type="auto">
+            <div class="gallery__info">
+              <h2 class="gallery__title">Карелия</h2>
+              <button type="button" class="gallery__button-like"></button>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <button type="button" class="gallery__button-delete"></button>
+            <img class="gallery__image" src="images/Albrus.jpg" alt="Гора Эльбрус на закате" data-type="auto">
+            <div class="gallery__info">
+              <h2 class="gallery__title">Гора Эльбрус</h2>
+              <button type="button" class="gallery__button-like"></button>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <button type="button" class="gallery__button-delete"></button>
+            <img class="gallery__image" src="images/Dombay.jpg" alt="Осенний Домбай в пасмурную погоду"
+              data-type="auto">
+            <div class="gallery__info">
+              <h2 class="gallery__title">Домбай</h2>
+              <button type="button" class="gallery__button-like"></button>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <button type="button" class="gallery__button-delete"></button>
+            <img class="gallery__image" src="images/Karachaevsk.jpg" alt="Сентинский храм в горах летом"
+              data-type="auto">
+            <div class="gallery__info">
+              <h2 class="gallery__title">Карачаево-Черкесская Республика</h2>
+              <button type="button" class="gallery__button-like"></button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">© 2020 Mesto Russia</p>
+    </footer>
+  </div>
+  <div id="redaction" class="popup">
+    <div class="popup__container">
+      <form class="popup__form" action="#" method="post" name="popupForm">
+        <h2 class="popup__form-title">Редактировать профиль</h2>
+        <input type="text" id="name" name="firstname" placeholder="Имя" class="popup__field">
+        <input type="text" id="job" name="description" placeholder="О себе" class="popup__field">
+        <button type="submit" class="popup__button-save" onclick="">Сохранить</button>
+      </form>
+      <button class="popup__button-close" type="button"></button>
+    </div>
+  </div>
+  <div id="addition" class="popup">
+    <div class="popup__container">
+      <form class="popup__form" action="#" method="post" name="popupForm">
+        <h2 class="popup__form-title">Новое место</h2>
+        <input type="text" id="name-card" name="nameCard" placeholder="Название" class="popup__field">
+        <input type="url" id="link-card" name="link" placeholder="Ссылка на картинку" class="popup__field">
+        <button type="submit" id="button-create" class="popup__button-save" onclick="">Создать</button>
+      </form>
+      <button type="button" id="button-close" class="popup__button-close"></button>
+    </div>
+  </div>
+  <div id="image-wrapper" class="popup__image-wrapper">
+    <div class="popup__image-container">
+      <div class="popup__image"></div>
+      <h2 class="popup__image-title">GFGKJLKlkl</h2>
+      <button type="button" id="button-close" class="popup__button-close"></button>
+    </div>
+  </div>
+  <template id="image-template">
+    <li class="gallery__item">
+      <button type="button" class="gallery__button-delete"></button>
+      <img class="gallery__image" src="" alt="" data-type="auto">
+      <div class="gallery__info">
+        <h2 class="gallery__title"></h2>
+        <button type="button" class="gallery__button-like"></button>
+      </div>
+    </li>
+  </template>
+  <script src="jsjs.js"></script>
+</body>
+
+</html>

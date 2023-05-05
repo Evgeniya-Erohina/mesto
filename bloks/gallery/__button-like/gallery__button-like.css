@@ -1,4 +1,4 @@
-.gallery__heart {
+.gallery__button-like {
   all: unset;
   min-width: 22px;
   height: 19px;
@@ -7,11 +7,11 @@
   cursor: pointer;
 }
 
-.gallery__heart:hover {
+.gallery__button-like:hover {
   opacity: 0.5;
 }
 
-.gallery__heart:active {
+.gallery__button-like_active {
   background: url(../../../images/heart\ dark.svg) center no-repeat;
   opacity: 1;
   transition: opacity 0.1s linear;

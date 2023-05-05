@@ -1,0 +1,21 @@
+.gallery__button-delete {
+  all: unset;
+  min-width: 22px;
+  height: 19px;
+  background: url(../../../images/deleteBtn.svg) center no-repeat;
+  transition: opacity ease-in-out 3s;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.gallery__button-delete:hover {
+  opacity: 0.9;
+}
+
+.gallery__button-delete:active {
+  background: url(../../../images/deleteBtnDark.svg) center no-repeat;
+  opacity: 1;
+  transition: opacity 1s linear;
+}

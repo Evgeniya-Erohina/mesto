@@ -29,62 +29,14 @@
         <button class="profile__form-addition" type="button"></button>
       </section>
       <section class="gallery">
-        <ul class="gallery__list">
-          <li class="gallery__item">
-            <img class="gallery__image" src="images/1.jpg" alt="Красная поляна летом, вид с высоты птичьего полета"
-              data-type="auto">
-            <div class="gallery__info">
-              <h2 class="gallery__title">Красная поляна</h2>
-              <button type="button" class="gallery__heart"></button>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <img class="gallery__image" src="images/2.jpg" alt="Живописеая долина реки Сулак в Дагестане "
-              data-type="auto">
-            <div class="gallery__info">
-              <h2 class="gallery__title">Сулакский каньон</h2>
-              <button type="button" class="gallery__heart"></button>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <img class="gallery__image" src="images/3.jpg" alt="Мраморные скалы горного парка Рускеала в Карелии"
-              data-type="auto">
-            <div class="gallery__info">
-              <h2 class="gallery__title">Карелия</h2>
-              <button type="button" class="gallery__heart"></button>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <img class="gallery__image" src="images/Albrus.jpg" alt="Гора Эльбрус на закате" data-type="auto">
-            <div class="gallery__info">
-              <h2 class="gallery__title">Гора Эльбрус</h2>
-              <button type="button" class="gallery__heart"></button>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <img class="gallery__image" src="images/Dombay.jpg" alt="Осенний Домбай в пасмурную погоду"
-              data-type="auto">
-            <div class="gallery__info">
-              <h2 class="gallery__title">Домбай</h2>
-              <button type="button" class="gallery__heart"></button>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <img class="gallery__image" src="images/Karachaevsk.jpg" alt="Сентинский храм в горах летом"
-              data-type="auto">
-            <div class="gallery__info">
-              <h2 class="gallery__title">Карачаево-Черкесская Республика</h2>
-              <button type="button" class="gallery__heart"></button>
-            </div>
-          </li>
-        </ul>
+        <ul class="gallery__list"></ul>
       </section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">© 2020 Mesto Russia</p>
     </footer>
   </div>
-  <div class="popup">
+  <div id="redaction" class="popup">
     <div class="popup__container">
       <form class="popup__form" action="#" method="post" name="popupForm">
         <h2 class="popup__form-title">Редактировать профиль</h2>
@@ -95,6 +47,34 @@
       <button class="popup__button-close" type="button"></button>
     </div>
   </div>
+  <div id="addition" class="popup">
+    <div class="popup__container">
+      <form class="popup__form" action="#" method="post" name="popupForm">
+        <h2 class="popup__form-title">Новое место</h2>
+        <input type="text" id="name-card" name="nameCard" placeholder="Название" class="popup__field">
+        <input type="url" id="link-card" name="link" placeholder="Ссылка на картинку" class="popup__field">
+        <button type="submit" id="button-create" class="popup__button-save" onclick="">Создать</button>
+      </form>
+      <button type="button" class="popup__button-close"></button>
+    </div>
+  </div>
+  <div id="image-wrapper" class="popup__image-wrapper">
+    <div class="popup__image-container">
+      <img class="popup__image">
+      <h2 class="popup__image-title"></h2>
+      <button type="button" id="button-close" class="popup__button-close"></button>
+    </div>
+  </div>
+  <template id="image-template">
+    <li class="gallery__item">
+      <button type="button" class="gallery__button-delete"></button>
+      <div class="gallery__image"></div>
+      <div class="gallery__info">
+        <h2 class="gallery__title"></h2>
+        <button type="button" class="gallery__button-like"></button>
+      </div>
+    </li>
+  </template>
   <script src="scripts/index.js"></script>
 </body>
 
