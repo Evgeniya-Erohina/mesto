@@ -24,10 +24,12 @@
 @import url(../bloks/popup/popup.css);
 @import url(../bloks/popup/_opened/popup_opened.css);
 @import url(../bloks/popup/__container/popup__container.css);
-@import url(../bloks/popup/__image-wrapper/popup__image-wrapper.css);
-@import url(../bloks/popup/__image-container/popup__image-container.css);
-@import url(../bloks/popup/__image-title/popup__image-title.css);
-@import url(../bloks/popup/__image/popup__image.css);
+
+@import url(../bloks/image/__button-close/image__button-close.css);
+@import url(../bloks/image/__card/image__card.css);
+@import url(../bloks/image/__container/image__container.css);
+@import url(../bloks/image/__title/image__title.css);
+@import url(../bloks/image/image.css);
 
 @import url(../bloks/profile/__form-addition/profile__form-addition.css);
 @import url(../bloks/profile/__form-job/profile__form-job.css);

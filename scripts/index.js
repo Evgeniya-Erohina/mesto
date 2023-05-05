@@ -120,10 +120,10 @@ gallaryItems.forEach(gallaryItem => {
     document.getElementById('image-wrapper').style.display = 'flex';
     let url = gallaryImage.style.backgroundImage;
     url = url.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
-    document.querySelector('.popup__image').src = url;
-    document.querySelector('.popup__image-title').textContent = gallaryTitle.textContent;
+    document.querySelector('.image__card').src = url;
+    document.querySelector('.image__title').textContent = gallaryTitle.textContent;
   }
 });
-document.getElementById('button-close').onclick = () => {
+document.querySelector('.image__button-close').onclick = () => {
   document.getElementById('image-wrapper').style.display = 'none';
 }
