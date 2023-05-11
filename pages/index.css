@@ -18,23 +18,21 @@
 @import url(../bloks/page/page.css);
 
 @import url(../bloks/popup/__field/popup__field.css);
-@import url(../bloks/popup/__button-save/popup__button-save.css);
+@import url(../bloks/popup/__button-create/popup__button-create.css);
 @import url(../bloks/popup/__button-close/popup__button-close.css);
 @import url(../bloks/popup/__form-title/popup__form-title.css);
 @import url(../bloks/popup/popup.css);
 @import url(../bloks/popup/_opened/popup_opened.css);
 @import url(../bloks/popup/__container/popup__container.css);
+@import url(../bloks/popup/__image-container/popup__image-container.css);
+@import url(../bloks/popup/__image/popup__image.css);
+@import url(../bloks/popup/__title/popup__title.css);
+@import url(../bloks/popup/_opacity/popup_opacity.css);
 
-@import url(../bloks/image/__button-close/image__button-close.css);
-@import url(../bloks/image/__card/image__card.css);
-@import url(../bloks/image/__container/image__container.css);
-@import url(../bloks/image/__title/image__title.css);
-@import url(../bloks/image/image.css);
-
-@import url(../bloks/profile/__form-addition/profile__form-addition.css);
+@import url(../bloks/profile/__form-add/profile__form-add.css);
 @import url(../bloks/profile/__form-job/profile__form-job.css);
 @import url(../bloks/profile/__form-name/profile__form-name.css);
-@import url(../bloks/profile/__form-redaction/profile__form-redaction.css);
+@import url(../bloks/profile/__form-edit/profile__form-edit.css);
 @import url(../bloks/profile/__form/profile__form.css);
 @import url(../bloks/profile/__photo/profile__photo.css);
 @import url(../bloks/profile/profile.css);

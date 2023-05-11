@@ -1,0 +1,6 @@
+.popup__image {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+}

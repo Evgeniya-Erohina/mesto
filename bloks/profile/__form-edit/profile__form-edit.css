@@ -1,4 +1,4 @@
-.profile__form-redaction {
+.profile__form-edit {
   all: unset;
   grid-area: button-r;
   background: url(../../../images/redaction.svg) 50% 50% no-repeat;
@@ -10,10 +10,10 @@
   margin: auto 0;
 }
 
-.profile__form-redaction:hover {
+.profile__form-edit:hover {
   opacity: 0.6;
 }
 
-.profile__form-redaction:active {
+.profile__form-edit:active {
   opacity: 1;
 }

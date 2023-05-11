@@ -1,4 +1,4 @@
-.profile__form-addition {
+.profile__form-add {
   all: unset;
   width: 150px;
   justify-self: end;
@@ -14,23 +14,23 @@
   flex-basis: auto;
 }
 
-.profile__form-addition:hover {
+.profile__form-add:hover {
   opacity: 0.6;
 }
 
-.profile__form-addition:active {
+.profile__form-add:active {
   opacity: 1;
 }
 
 @media (max-width: 940px) {
-  .profile__form-addition {
+  .profile__form-add {
     width: 100%;
     grid-column: span 2;
   }
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
-  .profile__form-addition {
+  .profile__form-add {
     margin: 0;
     grid-column: unset;
     background-size: 16px;
