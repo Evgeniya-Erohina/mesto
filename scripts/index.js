@@ -5,11 +5,10 @@ const galleryList = document.querySelector('.gallery__list');
 const popupImagePicture = document.querySelector('.popup__image');
 const openPopupBtnEdit = document.querySelector('.profile__form-edit');
 const openPopupBtnAdd = document.querySelector('.profile__form-add');
-const openPopupImage = document.querySelector('.popup__image');
 const popups = document.querySelectorAll('.popup');
-const popupEdit = document.getElementById('popup-edit');
-const popupAdd = document.getElementById('popup-add');
-const popupCard = document.getElementById('popup-card');
+const popupEdit = document.querySelector('#popup-edit');
+const popupAdd = document.querySelector('#popup-add');
+const popupCard = document.querySelector('#popup-card');
 const buttonCreate = popupAdd.querySelector('.popup__button-create');
 const formEdit = document.forms.edit;
 const nameInput = formEdit.elements.firstname;
@@ -38,7 +37,7 @@ const createCard = ({ name, link }) => {
   // Открытие созданной карточки
   const handleCardClick = evt => {
     popupImagePicture.src = evt.target.src;
-    document.querySelector('.popup__image').alt = evt.target.alt;
+    popupImagePicture.alt = evt.target.alt;
     document.querySelector('.popup__title').textContent = evt.target.alt;
     openPopup(popupCard);
   }
@@ -51,8 +50,8 @@ initialCards.forEach((initialCard) => {
 })
 
 // Открытие модальных окон
-function openPopup(popups) {
-  popups.classList.add("popup_opened");
+function openPopup(popup) {
+  popup.classList.add("popup_opened");
 }
 
 openPopupBtnEdit.addEventListener('click', function () {
@@ -64,15 +63,12 @@ openPopupBtnAdd.addEventListener('click', function () {
   formAdd.reset();
   openPopup(popupAdd);
 });
-openPopupImage.addEventListener('click', function () {
-  openPopup(popupImagePicture);
-});
 
 // Метод закрытия по клику вне или кнопке
 const nameProfile = document.querySelector('.profile__form-name');
 const jobProfile = document.querySelector('.profile__form-job');
-function closePopup(popups) {
-  popups.classList.remove("popup_opened");
+function closePopup(popup) {
+  popup.classList.remove("popup_opened");
 }
 const closePopupByClick = event => {
   const isOverlay = event.target.classList.contains('popup');
@@ -95,8 +91,8 @@ formEdit.addEventListener('submit', handleProfileFormSubmit);
 
 formAdd.addEventListener('submit', function (evt) {
   evt.preventDefault();
-  let link = linkInput.value;
-  let name = nameCardInput.value;
+  const link = linkInput.value;
+  const name = nameCardInput.value;
   createCard({ name, link });
   closePopup(popupAdd);
 });
