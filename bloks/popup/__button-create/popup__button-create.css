@@ -24,6 +24,13 @@
   opacity: 1;
 }
 
+.popup__button-create_disabled {
+  background: #FFFFFF;
+  border: #C4C4C4 1px solid;
+  cursor: default;
+  color: #C4C4C4;
+}
+
 @media (max-width: 600px) {
   .popup__button-create {
     font-size: 14px;

@@ -17,3 +17,6 @@
 .profile__form-edit:active {
   opacity: 1;
 }
+.profile__form-edit_type_error {
+  border-bottom-color: red;
+}

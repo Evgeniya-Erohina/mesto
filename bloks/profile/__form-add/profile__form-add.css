@@ -22,6 +22,10 @@
   opacity: 1;
 }
 
+.profile__form-add_type_error {
+  border-bottom-color: red;
+}
+
 @media (max-width: 940px) {
   .profile__form-add {
     width: 100%;

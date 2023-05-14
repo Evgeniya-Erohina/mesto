@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./pages/index.css">
   <script defer src="./scripts/constants.js" type='module'></script>
   <script defer src="./scripts/index.js" type='module'></script>
+  <script defer src="./scripts/validate.js" type='module'></script>
 </head>
 
 <body class="root">
@@ -40,31 +41,39 @@
   </div>
   <div id="popup-edit" class="popup">
     <div class="popup__container">
-      <form class="popup__form" name="edit">
+      <form class="popup__form" id="edit" name="edit">
         <h2 class="popup__form-title">Редактировать профиль</h2>
-        <input type="text" id="firstname" name="firstname" placeholder="Имя" required class="popup__field">
-        <input type="text" id="job" name="job" placeholder="О себе" required class="popup__field">
-        <button type="submit"  class="popup__button-create" onclick="">Сохранить</button>
+        <input type="text" id="firstname" name="firstname" minlength="2" maxlength="40" placeholder="Имя" required
+          class="popup__input">
+        <span class="popup__input-error-firstname"></span>
+        <input type="text" id="job" name="job" placeholder="О себе" minlength="2" maxlength="200" required
+          class="popup__input">
+        <span class="popup__input-error-job"></span>
+        <button type="submit" class="popup__button-create" onclick="">Сохранить</button>
       </form>
       <button class="popup__button-close" aria-label="Закрыть" type="button"></button>
     </div>
   </div>
   <div id="popup-add" class="popup">
     <div class="popup__container">
-      <form class="popup__form" name="add">
+      <form class="popup__form" id="add" name="add" novalidate>
         <h2 class="popup__form-title">Новое место</h2>
-        <input type="text" id="name-card" name="nameCard" placeholder="Название" required class="popup__field">
-        <input type="url" id="link-card" name="link" placeholder="Ссылка на картинку" required class="popup__field">
-        <button type="submit" class="popup__button-create" onclick="">Создать</button>
-      </form>
-      <button type="button" aria-label="Закрыть" class="popup__button-close"></button>
+        <input type="text" id="namecard" name="nameCard" placeholder="Название" minlength="1" maxlength="30" required
+          class="popup__input">
+        <span class="popup__input-error popup__input-error-namecard"></span>
+        <input type="url" id="link" name="link" placeholder="Ссылка на картинку" required class="popup__input">
+        <span class="popup__input-error popup__input-error-link"></span>
     </div>
+    <button type="submit" class="popup__button-create" onclick="">Создать</button>
+    </form>
+    <button type="submit" aria-label="Закрыть" class="popup__button-close"></button>
+  </div>
   </div>
   <div id="popup-card" class="popup popup_opacity">
     <div class="popup__image-container">
       <img class="popup__image" src="#" alt="">
       <h2 class="popup__title"></h2>
-      <button type="button" id="button-close" aria-label="Закрыть" class="popup__button-close"></button>
+      <button type="submit" id="button-close" aria-label="Закрыть" class="popup__button-close"></button>
     </div>
   </div>
   <template class="gallary__template">

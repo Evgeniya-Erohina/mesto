@@ -17,7 +17,7 @@
 
 @import url(../bloks/page/page.css);
 
-@import url(../bloks/popup/__field/popup__field.css);
+@import url(../bloks/popup/__input/popup__input.css);
 @import url(../bloks/popup/__button-create/popup__button-create.css);
 @import url(../bloks/popup/__button-close/popup__button-close.css);
 @import url(../bloks/popup/__form-title/popup__form-title.css);
@@ -28,6 +28,8 @@
 @import url(../bloks/popup/__image/popup__image.css);
 @import url(../bloks/popup/__title/popup__title.css);
 @import url(../bloks/popup/_opacity/popup_opacity.css);
+@import url(../bloks/popup/__input-error/popup__input-error.css);
+@import url(../bloks/popup/__field/popup__field.css);
 
 @import url(../bloks/profile/__form-add/profile__form-add.css);
 @import url(../bloks/profile/__form-job/profile__form-job.css);
