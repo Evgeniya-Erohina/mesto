@@ -3,4 +3,14 @@
   font-size: 12px;
   line-height: 15px;
   color: #f00;
+  overflow: hidden;
+  min-height: 30px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.popup__span {
+  min-height: 30px;
+  max-height: max-content;
+  display: block;
 }

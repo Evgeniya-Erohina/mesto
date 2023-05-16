@@ -9,6 +9,7 @@
   text-overflow: ellipsis;
   grid-area: name;
   margin: 0;
+  max-width: 100%;
 }
 
 @media (min-width: 320px) and (max-width: 600px) {

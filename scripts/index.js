@@ -9,7 +9,6 @@ const popups = document.querySelectorAll('.popup');
 const popupEdit = document.querySelector('#popup-edit');
 const popupAdd = document.querySelector('#popup-add');
 const popupCard = document.querySelector('#popup-card');
-//const buttonCreate = popupAdd.querySelector('.popup__button-create');
 const formEdit = document.forms.edit;
 const nameInput = formEdit.elements.firstname;
 const jobInput = formEdit.elements.job;
@@ -77,6 +76,7 @@ const closePopupByClick = event => {
     closePopup(event.currentTarget);
   }
 }
+
 popups.forEach(popup => {
   popup.addEventListener('click', closePopupByClick);
 })
@@ -96,3 +96,9 @@ formAdd.addEventListener('submit', function (evt) {
   createCard({ name, link });
   closePopup(popupAdd);
 });
+function keyHandler(event){
+  if (event.key === "Escape") {
+    closePopup;
+  }
+}
+document.addEventListener('keydown', keyHandler);
