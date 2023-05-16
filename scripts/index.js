@@ -69,6 +69,7 @@ const jobProfile = document.querySelector('.profile__form-job');
 function closePopup(popup) {
   popup.classList.remove("popup_opened");
 }
+
 const closePopupByClick = event => {
   const isOverlay = event.target.classList.contains('popup');
   const isCloseBtn = event.target.classList.contains('popup__button-close');
@@ -76,7 +77,6 @@ const closePopupByClick = event => {
     closePopup(event.currentTarget);
   }
 }
-
 popups.forEach(popup => {
   popup.addEventListener('click', closePopupByClick);
 })
@@ -96,9 +96,22 @@ formAdd.addEventListener('submit', function (evt) {
   createCard({ name, link });
   closePopup(popupAdd);
 });
-function keyHandler(event){
-  if (event.key === "Escape") {
-    closePopup;
-  }
+if (popups.classList.contains('popup_opened')) {
+  document.addEventListener('keypress', function(e) {
+    if (evt.key === 'Escape') {
+      closePopup(popupAdd);
+    }
+})
 }
-document.addEventListener('keydown', keyHandler);
+//function keyHandler(evt) {
+  //const isCloseEsc = evt.target.classList.contains('popup_opened')
+  //if ((evt.key === 'Escape') && isCloseEsc); {
+   //closePopup();
+   //console.log(isCloseEsc)
+  //}
+  //isCloseEsc.addEventListener('keydown', keyHandler);
+//}
+//popups.forEach(popup => {
+  //isCloseEsc.addEventListener('keydown', keyHandler);
+//})
+//console.log(evt.target.closest('popup_opened')
