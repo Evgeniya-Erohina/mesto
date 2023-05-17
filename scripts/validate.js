@@ -11,14 +11,12 @@ function showError(inputElement, errorElement, validationConfig) {
   inputElement.classList.add(validationConfig.inputErrorClass);
   errorElement.textContent = inputElement.validationMessage;
   errorElement.classList.add(validationConfig.errorClass);
-
 }
 
 function hideError(inputElement, errorElement, validationConfig) {
   inputElement.classList.remove(validationConfig.inputErrorClass);
   errorElement.textContent = '';
   errorElement.classList.remove(validationConfig.errorClass);
-
 }
 function lengthRange(inputtxt, minlength, maxlength) {
   const userText = inputtxt.value;

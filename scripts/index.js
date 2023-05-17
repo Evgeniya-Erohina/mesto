@@ -48,21 +48,17 @@ initialCards.forEach((initialCard) => {
   galleryList.appendChild(createCard(initialCard));
 })
 // Закрытие модального окна кнопкой Escape
-//document.addEventListener("keydown", function(event) {
-  //if (event.key === "Escape") {
-    //closePopup();
-  //}
-  //});
+
 function closePopupByEsc(evt) {
- if (evt.key === 'Escape'){
-   closePopup();
-  }}
+  if (evt.key === 'Escape') {
+    closePopup();
+  }
+}
 
 // Открытие модальных окон
 function openPopup(popup) {
   document.addEventListener('keydown', closePopupByEsc);
   popup.classList.add("popup_opened");
-
 }
 
 openPopupBtnEdit.addEventListener('click', function () {
@@ -80,7 +76,8 @@ const nameProfile = document.querySelector('.profile__form-name');
 const jobProfile = document.querySelector('.profile__form-job');
 function closePopup(popup) {
   popups.forEach(popup => {
-  popup.classList.remove("popup_opened");})
+    popup.classList.remove("popup_opened");
+  })
   document.removeEventListener('keydown', closePopupByEsc);
 }
 
@@ -110,19 +107,3 @@ formAdd.addEventListener('submit', function (evt) {
   createCard({ name, link });
   closePopup(popupAdd);
 });
-/*if (popups.classList.contains('popup_opened')) {
-  document.addEventListener('keypress', function(e) {
-    if (evt.key === 'Escape') {
-      closePopup(popupAdd);
-    }
-})
-}*/
-/*function keyHandler(evt) {
-  const isCloseEsc = document.querySelector('.popup_opened');
-  if (evt.key === 'Escape'); {
-    closePopup();
-  }
-  isCloseEsc.addEventListener('keydown', keyHandler);
-}
-
-console.log(evt.key)*/
